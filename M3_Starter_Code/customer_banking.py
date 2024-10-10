@@ -25,7 +25,7 @@ def main():
     savings_maturity = input("What is the length of months for the savings account? ")
     while not(savings_maturity.isdigit()):
         savings_maturity = input("Please enter only numerical values ")
-    savings_maturity = int(savings_balance)
+    savings_maturity = int(savings_maturity)
 
     # Call the create_savings_account function and pass the variables from the user.
     updated_savings_balance, interest_savings_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
@@ -50,7 +50,7 @@ def main():
     cd_maturity = input("What is the length of months for the CD account? ")
     while not(cd_maturity.isdigit()):
         cd_maturity = input("Please enter only numerical values ")
-    cd_maturity = int(cd_balance)
+    cd_maturity = int(cd_maturity)
 
     # Call the create_cd_account function and pass the variables from the user.
     updated_cd_balance, interest_cd_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
